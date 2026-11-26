@@ -4,7 +4,7 @@
 
 OpenCampfire is an open-source project exploring the modding possibilities of Cozy Campfire Club (The Demo for now).
 
-## Current project: Cosmetic Inspector
+## Current project: All the cats!!!
 
 The initial implementation enables selection of the four demo-locked
 cat species through the game's existing cosmetic equipment pipeline, yay!
