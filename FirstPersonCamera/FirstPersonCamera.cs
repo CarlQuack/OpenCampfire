@@ -1,3 +1,4 @@
+
 using System.Reflection;
 using BepInEx;
 using HarmonyLib;
@@ -27,16 +28,14 @@ public class FirstPersonCameraPlugin : BaseUnityPlugin
 
         if (ForceFirstPersonFrameCount == null)
         {
-            Logger.LogError(
-                "Could not find mForceFirstPersonFrameCount. Plugin initialization aborted.");
+            Logger.LogError("Could not find mForceFirstPersonFrameCount.");
             return;
         }
 
         harmony = new Harmony("com.carlos.firstpersoncamera");
 
         var updateMethod = AccessTools.Method(
-            typeof(GameplayCamera),
-            "Update");
+            typeof(GameplayCamera), "Update");
 
         if (updateMethod == null)
         {
@@ -56,10 +55,17 @@ public class FirstPersonCameraPlugin : BaseUnityPlugin
         Logger.LogInfo("FIRST PERSON CAMERA INITIALIZED");
     }
 
+    private static bool IsTyping()
+    {
+        var chat = CCSCore.Singleton<UI.ChatPopup>.Instance;
+        return chat != null && chat.IsShown();
+    }
+
     private static void CameraUpdatePrefix(GameplayCamera __instance)
     {
         if (Keyboard.current != null &&
-            Keyboard.current.gKey.wasPressedThisFrame)
+            Keyboard.current.gKey.wasPressedThisFrame &&
+            !IsTyping())
         {
             var player = PlayerTracker.MyPlayer;
 

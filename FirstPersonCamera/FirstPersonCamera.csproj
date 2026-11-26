@@ -22,6 +22,12 @@
     <Reference Include="UnityEngine.CoreModule">
       <HintPath>$(GameDir)/Cozy Campfire Club_Data/Managed/UnityEngine.CoreModule.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>$(GameDir)/Cozy Campfire Club_Data/Managed/UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>$(GameDir)/Cozy Campfire Club_Data/Managed/Unity.TextMeshPro.dll</HintPath>
+    </Reference>
     <Reference Include="Fusion.Runtime">
       <HintPath>$(GameDir)/Cozy Campfire Club_Data/Managed/Fusion.Runtime.dll</HintPath>
     </Reference>
