@@ -1,8 +1,8 @@
 # OpenCampfire
 
-**Community-powered modding for Cozy Campfire Club.**
+**Mod for Cozy Campfire Club.**
 
-OpenCampfire is an open-source project exploring the modding possibilities of Cozy Campfire Club (The Demo for now).
+OpenCampfire is an open-source project that explored the modding possibilities of Cozy Campfire Club (The Demo for now).
 
 ## Current project: All the cats!!!
 
@@ -22,7 +22,7 @@ Marmalade (the orange cat) remains selectable through the game's normal interfac
 ### Known limitations
 
 - Selected locked cats do not persist after restarting the game, so you'll have to pick them each time.
-- Other cosmetics, like raccoons are not yet supported, accepting pull requests for that.
+- Other cosmetics, like raccoons are not yet supported!
 
 ## Requirements
 
