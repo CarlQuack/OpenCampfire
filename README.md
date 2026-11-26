@@ -15,7 +15,7 @@ cat species through the game's existing cosmetic equipment pipeline, yay!
 - Domino
 - Toffee
 - Patches
-- Multiplayer appearance synchronization on by default.
+- Multiplayer appearance synchronization on by default, provided by the game duh!
 
 Marmalade (the orange cat) remains selectable through the game's normal interface
 
